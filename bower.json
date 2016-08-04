@@ -1,0 +1,36 @@
+{
+    "name": "dynamic-box-size",
+    "version": "1.0.0",
+    "title": "Dynamic HTML element size",
+    "appPath": "src",
+    "description": "",
+    "keywords": [
+        "image",
+        "video",
+        "gallery"
+    ],
+    "homepage": "https://github.com/cbspire/dynamic-box-size",
+    "author": {
+        "name": "Claudio Bisconti"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/cbspire/dynamic-box-size.git"
+    },
+    "bugs": "https://github.com/cbspire/dynamic-box-size/issues",
+    "dependencies": {
+    },
+    "ignore": [
+        "/*.*",
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "app/bower_components",
+        "test",
+        "tests"
+    ],
+    "authors": [
+        "Claudio Bisconti <claudio.bisconti@gmail.com>"
+    ],
+    "license": "MIT"
+}
