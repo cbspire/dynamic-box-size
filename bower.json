@@ -2,6 +2,7 @@
     "name": "dynamic-box-size",
     "version": "1.0.0",
     "title": "Dynamic HTML element size",
+    "main": "./dist/dynamic-box-size.js",
     "appPath": "src",
     "description": "",
     "keywords": [
