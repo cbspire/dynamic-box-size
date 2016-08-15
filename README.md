@@ -1,5 +1,7 @@
-Dynamic box size
+Dynamic box size 
 ===================
+[![Build Status](https://travis-ci.org/cbspire/dynamic-box-size.svg?branch=master)](https://travis-ci.org/cbspire/dynamic-box-size)
+
 Angularjs directive who can automatically resize width or height of HTML elements
 
 Requirements
