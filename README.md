@@ -67,6 +67,10 @@ Single square image based on height watch
     <div dynamic-box-size dynamic-box-follow="height" style="background-image: url('img.png')">
     </div>
 
+Demo
+-------------
+[Demo](https://cbspire.github.io/dynamic-box-size/)
+
 
 ----------
 
