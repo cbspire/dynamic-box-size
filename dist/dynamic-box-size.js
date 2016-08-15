@@ -1,19 +1,29 @@
 'use strict';
 angular.module('dynamic-box-size', [])
-  .directive('dynamicBoxSize', function() {
+  .directive('dynamicBoxSize', function () {
     return {
       restrict: 'A',
       link: function (scope, element, attrs) {
         var percentage = (attrs.dynamicBoxSize == "") ? 1 : (parseInt(attrs.dynamicBoxSize) / 100);
+        var watchHeight = (attrs.dynamicBoxFollow === "height");
 
-        scope.getWidth = function () {
+        attrs.$observe('dynamicBoxFollow', function(value) {
+          watchHeight = (value === "height");
+        });
+
+        scope.$watch(function () {
+          if (watchHeight)
+            return parseInt(element[0].clientHeight);
+
           return parseInt(element[0].clientWidth);
-        };
+        }, function (dimension) {
+          if (dimension > 0) {
+            var real = dimension * percentage;
 
-        scope.$watch(scope.getWidth, function (width) {
-          if (width > 0) {
-            var real = width * percentage;
-            element.css('height', real + 'px');
+            if (watchHeight)
+              element.css('width', real + 'px');
+            else
+              element.css('height', real + 'px');
           }
         }, true);
       }
