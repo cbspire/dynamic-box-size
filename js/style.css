@@ -1,5 +1,3 @@
-
-
 .split-panes 
 {
   left: 0px;
@@ -11,7 +9,7 @@
 
 .split-panes > .split-handler 
 {
-  background-color: transparent;
+  background: transparent;
   position: absolute;
   z-index: 999;
 }
@@ -20,13 +18,11 @@
 
 .split-panes.horizontal > .split-handler
 {
-  width: 24px;
-  margin-left: -10px;
+  width: 4px;
   top: 0px; 
   left: 50%;
   bottom: 0px;
   cursor: ew-resize;
-  background-image: url("../images/horizontal-resize.png");
 }
 
 .split-panes.horizontal > .split-pane1,
@@ -45,7 +41,7 @@
 {
   left: 50%;
   right: 0px;
-  border-left: 4px solid #424242;
+  border-left: 1px solid #aaa;
 }
 
 
@@ -53,13 +49,11 @@
 
 .split-panes.vertical > .split-handler
 {
-  height: 24px;
-  margin-top: -10px;
+  height: 4px;
   top: 50%; 
   left: 0px;
   right: 0px;
   cursor: ns-resize;
-  background-image: url("../images/vertical-resize.png");
 }
 
 .split-panes.vertical > .split-pane1,
@@ -78,34 +72,5 @@
 {
   top: 50%;
   bottom: 0px;
-  border-top: 4px solid #424242;
-}
-
-.split-handler {
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.box-container {
-  border: 4px solid #424242;
-  overflow: hidden;
-  position: relative;
-  height: 400px;
-  width: 100%;
-}
-
-.cover-image {
-        background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-.full-height {
-    height: 100%;
-}
-
-.clear {
-  margin-top: 30px;
+  border-top: 1px solid #aaa;
 }

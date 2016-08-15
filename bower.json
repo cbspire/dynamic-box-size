@@ -1,0 +1,25 @@
+{
+  "name": "dynamic-box-size",
+  "homepage": "https://github.com/cbspire/dynamic-box-size",
+  "authors": [
+    "Claudio <claudio.bisconti@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.8",
+    "bootstrap": "^3.3.7",
+    "roboto-fontface": "^0.5.0",
+    "bg-splitter": "*"
+  }
+}
