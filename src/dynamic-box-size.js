@@ -7,11 +7,11 @@ angular.module('dynamic-box-size', [])
         var percentage = (attrs.dynamicBoxSize == "") ? 1 : (parseInt(attrs.dynamicBoxSize) / 100);
         var watchHeight = (attrs.dynamicBoxFollow === "height");
 
-        attrs.$observe('dynamicBoxFollow', function(value) {
+        var observer = attrs.$observe('dynamicBoxFollow', function(value) {
           watchHeight = (value === "height");
         });
 
-        scope.$watch(function () {
+        var watcher = scope.$watch(function () {
           if (watchHeight)
             return parseInt(element[0].clientHeight);
 
@@ -26,6 +26,11 @@ angular.module('dynamic-box-size', [])
               element.css('height', real + 'px');
           }
         }, true);
+
+        scope.$on('$destroy', function() {
+            observer();
+            watcher();
+        });
       }
     };
   });
